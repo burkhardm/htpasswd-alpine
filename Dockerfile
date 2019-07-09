@@ -1,11 +1,11 @@
 FROM alpine:latest
 LABEL maintainer="martin.bukhard@gmail.com"
 
-ARG BUILD_DATE
-ARG VCS_REF
-ARG BUILD_VERSION
+ARG BUILD_DATE=""
+ARG VCS_REF=""
+ARG BUILD_VERSION="0.1"
 
-LABEL org.label-schema.schema-version="1.0" \
+LABEL org.label-schema.schema-version="1.0.0-rc1" \
   org.label-schema.build-date=$BUILD_DATE \
   org.label-schema.name="burkhardm/htpasswd-alpine" \
   org.label-schema.description="OpenSSL and Apache .htpasswd generator based on Alpine Linux." \
