@@ -18,5 +18,6 @@ LABEL org.label-schema.schema-version="1.0" \
 
 RUN apk add --no-cache apache2-utils openssl && rm -rf /var/cache/apk/*
 COPY ./passwd.sh /passwd.sh
+RUN chmod +x /passwd.sh
 ENTRYPOINT ["/passwd.sh"]
 CMD []
